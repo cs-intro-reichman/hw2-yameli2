@@ -65,6 +65,7 @@ public class Cheers {
                              break;
                  }
                 }
+                else capitalCheerWord += letter;
                 }
                 String addAnLetters = "AEFHILMNORSX";
                 for(int i =0; i<capitalCheerWord.length(); i++)
