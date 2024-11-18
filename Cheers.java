@@ -74,11 +74,11 @@ public class Cheers {
                 {
                         if (addAnLetters.indexOf(capitalCheerWord.charAt(i)) == -1)
                         {
-                                System.out.println("GIVE ME a "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");      
+                                System.out.println("Give me a "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");      
                         }
                         else
                         {
-                                System.out.println("GIVE ME an "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");
+                                System.out.println("Give me an "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");
                         }
                 }
                 System.out.println("What does it spell?");
