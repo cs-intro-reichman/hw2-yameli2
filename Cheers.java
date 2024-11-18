@@ -66,7 +66,6 @@ public class Cheers {
                  }
                 }
                 }
-                System.out.println(capitalCheerWord);
                 String addAnLetters = "AEFHILMNORSX";
                 for(int i =0; i<capitalCheerWord.length(); i++)
                 {
