@@ -4,13 +4,12 @@ public class Cheers {
                 String cheerWord = args[0];
                 int numOfCheer = Integer.parseInt(args[1]);
                 String ABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-                //String abc = "abcdefghijklmnopqrstuvwxyz";
-                String capitalCheerWord = " ";
-                //runi
-                for(int j=0;j<ABC.length();j++)
+                String capitalCheerWord ="";
+                for(int j=0;j<cheerWord.length();j++)
                 {
                  char letter = cheerWord.charAt(j);
-                 if(ABC.indexOf(letter) == -1){
+                 if(ABC.indexOf(letter) == -1)
+                 {
                 switch (letter) {
                     case 'a':  capitalCheerWord += "A";
                              break;
@@ -64,23 +63,24 @@ public class Cheers {
                              break;
                     case 'z':  capitalCheerWord += "Z";
                              break;
+                 }
                 }
-        }
                 }
-               // cheerWord = cheerWord.toUpperCase();
+                System.out.println(capitalCheerWord);
                 String addAnLetters = "AEFHILMNORSX";
-                for(int i =0; i<cheerWord.length(); i++)
+                for(int i =0; i<capitalCheerWord.length(); i++)
                 {
-                        if (addAnLetters.indexOf(cheerWord) == -1){
-                                System.out.println("GIVE ME a "+cheerWord.charAt(i)+": "+cheerWord.charAt(i)+"!");      
+                        if (addAnLetters.indexOf(capitalCheerWord.charAt(i)) == -1)
+                        {
+                                System.out.println("GIVE ME a "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");      
                         }
                         else
                         {
-                                System.out.println("GIVE ME an "+cheerWord.charAt(i)+": "+cheerWord.charAt(i)+"!");
+                                System.out.println("GIVE ME an "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");
                         }
                 }
                 System.out.println("What does it spell?");
-                for(int b=0;b<cheerWord.length();b++)
-                        System.out.println(cheerWord+"!!!");   
+                for(int b=0;b<numOfCheer;b++)
+                        System.out.println(capitalCheerWord+"!!!");   
         }
 }
