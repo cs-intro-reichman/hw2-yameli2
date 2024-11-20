@@ -81,7 +81,7 @@ public class Cheers {
                                 System.out.println("Give me an "+capitalCheerWord.charAt(i)+": "+capitalCheerWord.charAt(i)+"!");
                         }
                 }
-                System.out.println("What does it spell?");
+                System.out.println("What does that spell?");
                 for(int b=0;b<numOfCheer;b++)
                         System.out.println(capitalCheerWord+"!!!");   
         }
