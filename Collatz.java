@@ -15,17 +15,17 @@ public class Collatz {
 				{
 				if(j%2 == 0 ){
 					j= j/2;
-					System.out.print(" "+j+" ");
+					System.out.print(j+" ");
 					counter++;
 				}
 				else
 				{
 					j = (j*3)+1;
-					System.out.print(" "+j+" ");
+					System.out.print(j+" ");
 					counter++;
 				}
 			   }
-			   System.out.println(" ("+counter+") ");
+			   System.out.println("("+counter+") ");
 			   counter=1;
 			}
 			System.out.println("Every one of the first "+seed+" hailstone sequences reached 1.");
